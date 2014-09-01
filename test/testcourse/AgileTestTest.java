@@ -64,6 +64,17 @@ public class AgileTestTest {
         assertEquals(expResult, result);
     }
     
+    @Test
+    public void testAdd5() {
+        System.out.println("add test 3,-2");
+        String s1 = "3";
+        String s2 = "-2";
+        AgileTest instance = new AgileTest();
+        int expResult = 1;
+        int result = instance.add(s1, s2);
+        assertEquals(expResult, result);
+    }
+    
     @Test(timeout=1)
     public void testAdd3() {
         System.out.println("add Test with timeout");
